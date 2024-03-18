@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preschool Reading App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Age Authentication Popup -->
+    <div id="agePopup" class="popup">
+        <div class="popup-content">
+            <h2>Parent Age Verification</h2>
+            <input type="number" id="parentAgeInput" placeholder="Enter your age">
+            <button onclick="authenticateParent()">Verify</button>
+        </div>
+    </div>
+
+    <!-- Main Content (Blurred by default until age verification) -->
+    <div id="mainContent" class="blurry">
+        <h1>Welcome to the Preschool Reading App</h1>
+        <!-- Letter Caterpillar -->
+        <div id="caterpillar">
+            <div class="shell" onclick="expandCaterpillar('A')">A</div>
+            <!-- Add more shells for other letters -->
+        </div>
+        <!-- Expanded Letter Information -->
+        <div id="letterInfo">
+            <h2 id="letterHeading"></h2>
+            <p id="letterDescription"></p>
+            <input type="text" id="keyboardInput" placeholder="Type the letter here">
+            <button onclick="checkLetter()">Check</button>
+            <p id="feedbackMessage"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

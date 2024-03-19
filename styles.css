@@ -42,11 +42,21 @@ body {
 
 .shell {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 100px; /* Increased width */
+    height: 100px; /* Increased height */
     background-color: yellow;
     margin: 5px;
     cursor: pointer;
+    border-radius: 10%; /* Round shape */
+    text-align: center;
+    line-height: 60px; /* Center align text vertically */
+}
+
+#caterpillar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px; /* Adjust margin as needed */
 }
 
 .shell:hover {

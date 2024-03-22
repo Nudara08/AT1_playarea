@@ -134,17 +134,18 @@
                     letterHeading = 'Letter';
                     letterDescription = 'Information about the selected letter.';
             }
-        
+            
             document.getElementById('letterHeading').innerText = letterHeading;
             document.getElementById('letterDescription').innerText = letterDescription;
             document.getElementById('letterInfo').style.display = 'block';
+            document.getElementById('keyboardInput').style.display = 'block'; // Show input box
         }
-
-        // Letter Checking
+        
+        // Function to check user input
         function checkLetter() {
-            const keyboardInput = document.getElementById('keyboardInput').value.toUpperCase();
-            const selectedLetter = document.getElementById('letterHeading').innerText.split(': ')[1];
-
+            const keyboardInput = document.getElementById('keyboardInput').value.trim().toUpperCase();
+            const selectedLetter = document.getElementById('letterHeading').innerText.trim(); // Fixed split() error
+        
             if (keyboardInput === selectedLetter) {
                 document.getElementById('feedbackMessage').innerText = 'Correct!';
             } else {

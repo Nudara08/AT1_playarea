@@ -26,78 +26,97 @@
             switch (letter) {
                 case 'A':
                     letterHeading = 'Letter A';
+                    letterCompare = 'A';
                     letterDescription = 'Information about letter A.';
                     break;
                 case 'B':
                     letterHeading = 'Letter B';
+                    letterCompare = 'A';
                     letterDescription = 'Information abdout letter B.';
                     break;
                 case 'C':
                     letterHeading = 'Letter C';
+                    letterCompare = 'B';
                     letterDescription = 'Information about letter C.';
                     break;
                 case 'D':
                     letterHeading = 'Letter D';
+                    letterCompare = 'D';
                     letterDescription = 'Information about letter D.';
                     break;
                 case 'E':
                     letterHeading = 'Letter E';
+                    letterCompare = 'E';
                     letterDescription = 'Information about letter E.';
                     break;
                 case 'F':
                     letterHeading = 'Letter F';
+                    letterCompare = 'F';
                     letterDescription = 'Information about letter F.';
                     break;
                 case 'G':
                     letterHeading = 'Letter G';
+                    letterCompare = 'G';
                     letterDescription = 'Information about letter G.';
                     break;
                 case 'H':
                     letterHeading = 'Letter H';
+                    letterCompare = 'H';
                     letterDescription = 'Information about letter H.';
                     break;
                 case 'I':
                      letterHeading = 'Letter I';
+                     letterCompare = 'I';
                      letterDescription = 'Information about letter I.';
                      break;
                 case 'J':
                      letterHeading = 'Letter J';
+                     letterCompare = 'J';
                      letterDescription = 'Information about letter J.';
                      break;
                 case 'K':
                     letterHeading = 'Letter K';
+                    letterCompare = 'K';
                     letterDescription = 'Information about letter K.';
                     break;
                 case 'L':
                     letterHeading = 'Letter L';
+                    letterCompare = 'L';
                     letterDescription = 'Information about letter L.';
                     break;
                 case 'M':
                     letterHeading = 'Letter M';
+                    letterCompare = 'M';
                     letterDescription = 'Information about letter M.';
                     break;
                 case 'N':
                     letterHeading = 'Letter N';
+                    letterCompare = 'N';
                     letterDescription = 'Information about letter N.';
                     break;
                 case 'O':
                     letterHeading = 'Letter O';
+                    letterCompare = 'O';
                     letterDescription = 'Information about letter O.';
                     break;
                 case 'P':
                     letterHeading = 'Letter P';
+                    letterCompare = 'P';
                     letterDescription = 'Information about letter P.';
                     break;
                 case 'Q':
                     letterHeading = 'Letter Q';
+                    letterCompare = 'Q';
                     letterDescription = 'Information about letter Q.';
                     break;
                 case 'R':
                     letterHeading = 'Letter R';
+                    letterCompare = 'R';
                     letterDescription = 'Information about letter R.';
                     break;
                  case 'S':
                     letterHeading = 'Letter S';
+                    letterCompare = 'S';
                     letterDescription = 'Information about letter S.';
                     break;
                 case 'T':
@@ -106,6 +125,7 @@
                     break;
                 case 'U':
                     letterHeading = 'Letter U';
+                    letterCompare = 'U';
                     letterDescription = 'Information about letter U.';
                     break;
                 case 'V':
@@ -141,14 +161,20 @@
             document.getElementById('keyboardInput').style.display = 'block'; // Show input box
         }
         
-        // Function to check user input
+        
         function checkLetter() {
             const keyboardInput = document.getElementById('keyboardInput').value.trim().toUpperCase();
-            const selectedLetter = document.getElementById('letterHeading').innerText.trim(); // Fixed split() error
+            console.log(keyboardInput); // Debugging: Check keyboard input
+        
+            const selectedLetter = document.getElementById('letterCompare').innerText.trim().toUpperCase(); // Ensure uppercase
+            console.log(selectedLetter); // Debugging: Check selected letter for comparison
+        
+            const feedbackMessage = document.getElementById('feedbackMessage');
         
             if (keyboardInput === selectedLetter) {
-                document.getElementById('feedbackMessage').innerText = 'Correct!';
+                feedbackMessage.innerText = 'Correct!';
             } else {
-                document.getElementById('feedbackMessage').innerText = 'Incorrect. Try again!';
+                feedbackMessage.innerText = 'Incorrect. Try again!';
             }
         }
+        

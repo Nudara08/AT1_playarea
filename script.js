@@ -177,4 +177,3 @@
                 feedbackMessage.innerText = 'Incorrect. Try again!';
             }
         }
-        

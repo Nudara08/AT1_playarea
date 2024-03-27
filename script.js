@@ -21,6 +21,7 @@
         function expandCaterpillar(letter) {
             let letterHeading = '';
             let letterDescription = '';
+            let letterCompare = '';
         
             // Set the information based on the clicked letter
             switch (letter) {
@@ -31,12 +32,12 @@
                     break;
                 case 'B':
                     letterHeading = 'Letter B';
-                    letterCompare = 'A';
+                    letterCompare = 'B';
                     letterDescription = 'Information abdout letter B.';
                     break;
                 case 'C':
                     letterHeading = 'Letter C';
-                    letterCompare = 'B';
+                    letterCompare = 'C';
                     letterDescription = 'Information about letter C.';
                     break;
                 case 'D':
@@ -121,6 +122,7 @@
                     break;
                 case 'T':
                     letterHeading = 'Letter T';
+                    letterCompare = 'T';
                     letterDescription = 'Information about letter T.';
                     break;
                 case 'U':
@@ -130,22 +132,27 @@
                     break;
                 case 'V':
                     letterHeading = 'Letter V';
+                    letterCompare = 'V';
                     letterDescription = 'Information about letter V.';
                     break;
                 case 'W':
                     letterHeading = 'Letter W';
+                    letterCompare = 'W';
                     letterDescription = 'Information about letter W.';
                     break;
                 case 'X':
                     letterHeading = 'Letter X';
+                    letterCompare = 'X';
                     letterDescription = 'Information about letter X.';
                     break;
                 case 'Y':
                     letterHeading = 'Letter Y';
+                    letterCompare = 'Y';
                     letterDescription = 'Information about letter Y.';
                     break;
                 case 'Z':
                     letterHeading = 'Letter Z';
+                    letterCompare = 'Z';
                     letterDescription = 'Information about letter Z.';
                     break;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
@@ -157,6 +164,7 @@
             
             document.getElementById('letterHeading').innerText = letterHeading;
             document.getElementById('letterDescription').innerText = letterDescription;
+            document.getElementById('letterCompare').innerText = letterCompare;
             document.getElementById('letterInfo').style.display = 'block';
             document.getElementById('keyboardInput').style.display = 'block'; // Show input box
         }

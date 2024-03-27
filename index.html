@@ -53,10 +53,19 @@
         <div id="letterInfo">
             <h2 id="letterHeading"></h2>
             <p id="letterDescription"></p>
-            <input type="text" id="keyboardInput" placeholder="Can you find this letter on you're keyboard?">
+            <h6>Can you find this letter on your keyboard?</h6>
+            <input type="text" id="keyboardInput">
             <button onclick="checkLetter()">Check</button>
             <p id="feedbackMessage"></p>
         </div>
+        <div id="letterInfo">
+            <h2 id="letterHeading"></h2>
+            <p id="letterDescription"></p>
+            <p id="letterCompare" style="display: none;"></p> <!-- Added this line -->
+            <input type="text" id="keyboardInput" placeholder="Can you find this letter on your keyboard?">
+            <button onclick="checkLetter()">Check</button>
+            <p id="feedbackMessage"></p>
+        </div>        
     </div>
     <script src="script.js"></script>
 </body>

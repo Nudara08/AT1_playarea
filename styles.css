@@ -54,12 +54,42 @@ body {
 
 #caterpillar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 50px; /* Adjust margin as needed */
+    align-content: flex-start;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the caterpillar horizontally */
 }
 
 .shell:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#keyboardInput {
+    display: block;
+    margin: 10px auto; /* Adjust margin as needed */
+    text-align: center;
+}
+
+button {
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+
+.shell {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10%; /* Round shape */
+    text-align: center;
+    line-height: 60px; /* Center align text vertically */
+    transition: transform 0.3s ease-in-out;
+}
+
+.shell:hover {
+    transform: scale(1.1) rotate(-5deg); /* Add a slight rotation on hover */
     transition: transform 0.3s ease-in-out;
 }

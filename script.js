@@ -4,6 +4,19 @@
             agePopup.classList.add('show'); // Add 'show' class to display popup
         });
 
+        document.addEventListener('DOMContentLoaded', function() {
+            const agePopup = document.getElementById('agePopup');
+            agePopup.classList.add('show'); // Add 'show' class to display popup
+        
+            // Add event listener for Enter key on keyboardInput field
+            const keyboardInput = document.getElementById('keyboardInput');
+            keyboardInput.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    checkLetter(); // Call checkLetter function when Enter key is pressed
+                }
+            });
+        });
+
         // Function to authenticate parent's age
         function authenticateParent() {
             const parentAgeInput = document.getElementById('parentAgeInput');
@@ -22,11 +35,19 @@
         }
 
         function expandCaterpillar(letter) {
+            const keyboardInput = document.getElementById('keyboardInput');
+            keyboardInput.value = ''; // Clear input text
+
             let letterHeading = '';
             let letterDescription = '';
             let letterCompare = '';
             let imageSource = ''; // Add image source
-            let videoSource = ''; // Add video source        
+            let videoSource = ''; // Add video source     
+            
+            // Clear response message
+            const feedbackMessage = document.getElementById('feedbackMessage');
+            feedbackMessage.innerText = '';
+   
         
             // Set the information based on the clicked letter
             switch (letter) {

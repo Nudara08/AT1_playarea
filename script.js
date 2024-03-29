@@ -17,26 +17,73 @@
             });
         });
 
-        // Function to authenticate parent's age
-        function authenticateParent() {
-            const parentAgeInput = document.getElementById('parentAgeInput');
-            const parentAge = parseInt(parentAgeInput.value);
+    // Array to store questions
+    const questions = [
+        "What number means that we have nothing?",
+        "What is the product of 6 and 3?",
+        "How many sides does an octagon have?"
+    ];
 
-            if (parentAge >= 18) {
-                const agePopup = document.getElementById('agePopup');
-                agePopup.style.display = 'none'; // Hide age verification popup
-                document.getElementById('mainContent').style.display = 'block'; // Show the main content
-                const currentTimestamp = new Date().toISOString();  // Generates current timestamp in ISO 8601 format
-                console.log(currentTimestamp);  // Output: "2024-03-28T12:30:00.000Z" (example timestamp)
+    // Corresponding answers array
+    const answers = [
+        "0",
+        "18",
+        "8"
+    ];
 
-            } else {
-                alert('You must be at least 18 years old to access this website.');
-            }
+    // Function to show random question from the array
+    function showRandomQuestion() {
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        const question = questions[randomIndex];
+        document.getElementById('question').textContent = question;
+        document.getElementById('answerInput').value = ''; // Clear previous answer
+        const agePopup = document.getElementById('agePopup');
+        agePopup.classList.add('show');
+    }
+    
+
+    function checkAnswer() {
+        const answerInput = document.getElementById('answerInput').value.trim();
+        const correctAnswer = answers[questions.indexOf(document.getElementById('question').textContent)];
+    
+        const feedbackMessage = document.getElementById('feedbackMessage');
+    
+        if (answerInput.toLowerCase() === correctAnswer.toLowerCase()) {
+            feedbackMessage.innerText = 'Correct!';
+            document.getElementById('mainContent').style.display = 'block';
+            document.getElementById('agePopup').classList.remove('show'); // Hide the agePopup
+            document.getElementById('agePopup').classList.add('hide'); // Add 'hide' class to agePopup for further styling
+        } else {
+            // Show feedback as an external alert message
+            window.alert('Incorrect. Try again!');
         }
+    }
+    
+// Event listener for Enter key on keyboardInput field
+document.addEventListener('DOMContentLoaded', function() {
+    const keyboardInput = document.getElementById('keyboardInput');
+    keyboardInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            checkLetter(); // Call checkLetter function when Enter key is pressed
+        }
+    });
+});
 
-        function expandCaterpillar(letter) {
+// Event listener for page load
+document.addEventListener('DOMContentLoaded', function() {
+    showRandomQuestion();
+});
+        
+    function expandCaterpillar(letter) {
             const keyboardInput = document.getElementById('keyboardInput');
             keyboardInput.value = ''; // Clear input text
+            const caterpillar = document.getElementById('caterpillar');
+            const container = document.getElementById('container');
+            const letterInfo = document.getElementById('letterInfo');
+
+            // Display expanded letter information
+            letterInfo.style.display = 'block';
+
 
             let letterHeading = '';
             let letterDescription = '';
@@ -245,6 +292,14 @@
             document.getElementById('letterCompare').innerText = letterCompare;
             document.getElementById('letterInfo').style.display = 'block';
             document.getElementById('keyboardInput').style.display = 'block'; // Show input box
+        
+            // Update the layout to show expanded information on the right
+            container.style.display = 'flex';
+            container.style.flexDirection = 'row';
+            container.style.justifyContent = 'space-between'
+            
+            //Add a class to adjust letter width when expanded info is shown
+            caterpillar.classList.add('expand-letter');
         }
         
         

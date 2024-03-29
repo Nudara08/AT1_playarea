@@ -10,16 +10,18 @@
     <!-- Age Authentication Popup -->
     <div id="agePopup" class="popup">
         <div class="popup-content">
-            <h2>Parent Age Verification</h2>
-            <input type="number" id="parentAgeInput" placeholder="Enter your age">
-            <button onclick="authenticateParent()">Verify</button> <!-- Added id="verifyButton" -->
+            <h2 id='question'>Get an adult to asnwer the question!</h2>
+            <input type="number" id="answerInput" placeholder="Enter your answer">
+            <button onclick="checkAnswer()">Submit</button>
         </div>
     </div>
 
     <!-- Main Content (Blurred by default until age verification) -->
     <div id="mainContent">
         <h1>Welcome to the Preschool Reading App</h1>
-        <!-- Letter Caterpillar -->
+    <!--Parent container for caterpillar and expanded letter info-->   
+    <div class="container" id="container">
+    <!-- Letter Caterpillar -->
     <div id="caterpillar">
         <div class="shell" onclick="expandCaterpillar('A')" class="snake-item 1">
             <span>A</span>
@@ -99,6 +101,7 @@
         <div class="shell" onclick="expandCaterpillar('Z')" class="snake-item 2">
             <span>Z</span>
         </div>
+    </div>
     </div>
     
     <!-- Expanded Letter Information -->

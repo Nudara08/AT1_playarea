@@ -10,8 +10,9 @@
     <!-- Age Authentication Popup -->
     <div id="agePopup" class="popup">
         <div class="popup-content">
-            <h2 id='question'>Get an adult to asnwer the question!</h2>
-            <input type="number" id="answerInput" placeholder="Enter your answer">
+            <h1>Get an adult to answer the question!</h1>
+            <h2 id='question'></h2>
+            <input type="number" id="answerInput" placeholder="Enter your answer" onkeydown="checkAnswer(event)">
             <button onclick="checkAnswer()">Submit</button>
         </div>
     </div>
@@ -105,7 +106,7 @@
     </div>
     
     <!-- Expanded Letter Information -->
-        <div id="letterInfo">
+        <div id="letterInfo" class="info-panel">
             <h2 id="letterHeading"></h2>
             <p id="letterDescription"></p>
             <h6>Can you find this letter on your keyboard?</h6>

@@ -16,7 +16,6 @@ body {
 }
 
 .popup-content {
-    background-image: url('"C:\Users\Nudar\AT1_playarea\static\background.png"'); /* Set background image */
     background-color: #f0bdbd;
     padding: 20px;
     text-align: center; /* Center-align popup content */
@@ -80,14 +79,27 @@ body {
     transform: translateX(-300px); /* Move shells to the left */
 }
 
-.info-panel {
-    display: none;
-    width: 30%; /* Adjust width as needed */
-    margin-right: 20px; /* Add margin to create space between shells and expanded info */
+#letterInfo.show-info {
+    display: block;
+}
+
+#container.show-info #caterpillar {
+    flex-basis: 70%;
+}
+
+#container.show-info #caterpillar .shell {
+    width: 60px; /* Adjust width for shells when expanded info is shown */
+    height: 60px; /* Adjust height for shells when expanded info is shown */
+}
+
+#letterInfo.show-info ~ .caterpillar-container .shell {
+    width: 60px; /* Adjust width for shells when expanded info is shown */
+    height: 60px; /* Adjust height for shells when expanded info is shown */
 }
 
 .expanded-container {
-    flex-direction: row;
+    width: 30%; /* Width of the expanded information panel */
+    flex-direction: row; /* Adjust flex direction for expanded view */
 }
 
 .show-info .info-panel {

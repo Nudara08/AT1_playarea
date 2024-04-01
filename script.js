@@ -103,8 +103,6 @@ function expandCaterpillar(letter) {
         let letterHeading = '';
         let letterDescription = '';
         let letterCompare = '';
-        let imageSource = ''; // Add image source
-        let videoSource = ''; // Add video source     
         
         // Clear response message
         const feedbackMessage = document.getElementById('feedbackMessage');
@@ -117,29 +115,29 @@ function expandCaterpillar(letter) {
                 letterHeading = 'Letter A';
                 letterCompare = 'A';
                 letterDescription = 'Information about letter A.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Apple.jpg"'; // Add image source for letter A
+                videoSource = '"C:/Users/Nudar/AT1_playarea/static/A.m4a"'; // Add video source for letter A        
                 break;
             case 'B':
                 letterHeading = 'Letter B';
                 letterCompare = 'B';
                 letterDescription = 'Information abdout letter B.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Ball.jpg"'; // Add image source for letter A
+                videoSource = '"C:/Users/Nudar/AT1_playarea/static/B.m4a"'; // Add video source for letter A        
                 break;
             case 'C':
                 letterHeading = 'Letter C';
                 letterCompare = 'C';
                 letterDescription = 'Information about letter C.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'static/C.jpg'; // Add image source for letter A
+                videoSource = 'static/C.m4a'; // Add video source for letter A        
                 break;
             case 'D':
                 letterHeading = 'Letter D';
                 letterCompare = 'D';
                 letterDescription = 'Information about letter D.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'static/Dog.jpg'; // Add image source for letter A
+                videoSource = 'static/D.m4a'; // Add video source for letter A        
                 break;
             case 'E':
                 letterHeading = 'Letter E';

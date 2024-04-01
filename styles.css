@@ -21,8 +21,8 @@ body {
     text-align: center; /* Center-align popup content */
 }
 
-.popup-content input[type="text"] {
-    width: 80%; /* Adjust input width as needed */
+.popup-content input[type="text"] {/*age authentication popup*/
+    width: 80%; 
     margin-bottom: 10px;
 }
 
@@ -52,14 +52,14 @@ body {
 }
 
 #mainContent {
-    max-width: 800px;
+    max-width: 800px;/*everything in the website after athentication*/
     margin: 0 auto;
     text-align: center;
     display: none; /* Initially hidden */
 }
 
 .container {
-    display: flex;
+    display: flex; /*this is the div tag in the html file that houses all the expended letter information*/
     justify-content: space-between;
     align-items: flex-start; /* Align items at the top */
     max-width: 800px;
@@ -71,12 +71,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
-    max-width: 600px; /* Adjust the max-width as needed */
+    max-width: 600px; 
     margin: 0 auto; /* Center the caterpillar horizontally */
 }
 
 .expand-letter .shell {
-    transform: translateX(-300px); /* Move shells to the left */
+    transform: translateX(-300px); /* Moves shells to the left */
 }
 
 #letterInfo.show-info {
@@ -88,18 +88,18 @@ body {
 }
 
 #container.show-info #caterpillar .shell {
-    width: 60px; /* Adjust width for shells when expanded info is shown */
-    height: 60px; /* Adjust height for shells when expanded info is shown */
+    width: 60px; 
+    height: 60px;
 }
 
 #letterInfo.show-info ~ .caterpillar-container .shell {
-    width: 60px; /* Adjust width for shells when expanded info is shown */
-    height: 60px; /* Adjust height for shells when expanded info is shown */
+    width: 60px; 
+    height: 60px;
 }
 
 .expanded-container {
-    width: 30%; /* Width of the expanded information panel */
-    flex-direction: row; /* Adjust flex direction for expanded view */
+    width: 30%; 
+    flex-direction: row; 
 }
 
 .show-info .info-panel {
@@ -122,13 +122,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
-    max-width: 600px; /* Adjust the max-width as needed */
+    max-width: 600px; 
     margin: 0 auto; /* Center the caterpillar horizontally */
 }
 
 #keyboardInput {
-    display: block;
-    margin: 10px auto; /* Adjust margin as needed */
+    display: block; /*the input in the letter checking part of the expanded catterpillar*/
+    margin: 10px auto; 
     text-align: center;
 }
 

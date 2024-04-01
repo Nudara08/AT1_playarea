@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--makes sure that the website readjusts fro every window size, increasing the UX-->
     <title>Preschool Reading App</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
@@ -24,7 +24,7 @@
     <div class="container" id="container">
     <!-- Letter Caterpillar -->
     <div id="caterpillar">
-        <div class="shell" id="shellA" onclick="expandCaterpillar('A')" class="snake-item 1" >
+        <div class="shell" id="shellA" onclick="expandCaterpillar('A')" class="snake-item 1" ><!--'snake item' is needed for oprations involving css later-->
             <span>A</span>
         </div>
         <div class="shell" id="shellB" onclick="expandCaterpillar('B')" class="snake-item 2">
@@ -114,6 +114,7 @@
             <button onclick="checkLetter()">Check</button>
             <p id="feedbackMessage"></p>
         </div>
+        <!--this is just a copy of the one above but i cant get rid of it because it causes bugs-->
         <div id="letterInfo">
             <h2 id="letterHeading"></h2>
             <p id="letterDescription"></p>
@@ -123,6 +124,6 @@
             <p id="feedbackMessage"></p>
         </div>        
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script><!--link to javascript file-->
 </body>
 </html>

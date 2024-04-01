@@ -15,6 +15,7 @@ function toggleBlur(isBlur) {
         toggleBlur(true);// Apply blur effect on main content
     });
 
+    // Event listener for completly loaded HTML page
     document.addEventListener('DOMContentLoaded', function() {
         const agePopup = document.getElementById('agePopup');
         agePopup.classList.add('show'); // Add 'show' class to display popup
@@ -115,186 +116,186 @@ function expandCaterpillar(letter) {
                 letterHeading = 'Letter A';
                 letterCompare = 'A';
                 letterDescription = 'Information about letter A.';
-                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Apple.jpg"'; // Add image source for letter A
-                videoSource = '"C:/Users/Nudar/AT1_playarea/static/A.m4a"'; // Add video source for letter A        
+                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Apple.jpg"'; 
+                videoSource = '"C:/Users/Nudar/AT1_playarea/static/A.m4a"';
                 break;
             case 'B':
                 letterHeading = 'Letter B';
                 letterCompare = 'B';
                 letterDescription = 'Information abdout letter B.';
-                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Ball.jpg"'; // Add image source for letter A
-                videoSource = '"C:/Users/Nudar/AT1_playarea/static/B.m4a"'; // Add video source for letter A        
+                imageSource = '"C:/Users/Nudar/AT1_playarea/static/Ball.jpg"';
+                videoSource = '"C:/Users/Nudar/AT1_playarea/static/B.m4a"';         
                 break;
             case 'C':
                 letterHeading = 'Letter C';
                 letterCompare = 'C';
                 letterDescription = 'Information about letter C.';
-                imageSource = 'static/C.jpg'; // Add image source for letter A
-                videoSource = 'static/C.m4a'; // Add video source for letter A        
+                imageSource = 'static/C.jpg'; 
+                videoSource = 'static/C.m4a';         
                 break;
             case 'D':
                 letterHeading = 'Letter D';
                 letterCompare = 'D';
                 letterDescription = 'Information about letter D.';
-                imageSource = 'static/Dog.jpg'; // Add image source for letter A
-                videoSource = 'static/D.m4a'; // Add video source for letter A        
+                imageSource = 'static/Dog.jpg'; 
+                videoSource = 'static/D.m4a';         
                 break;
             case 'E':
                 letterHeading = 'Letter E';
                 letterCompare = 'E';
                 letterDescription = 'Information about letter E.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'F':
                 letterHeading = 'Letter F';
                 letterCompare = 'F';
                 letterDescription = 'Information about letter F.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'G':
                 letterHeading = 'Letter G';
                 letterCompare = 'G';
                 letterDescription = 'Information about letter G.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'H':
                 letterHeading = 'Letter H';
                 letterCompare = 'H';
                 letterDescription = 'Information about letter H.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'I':
                  letterHeading = 'Letter I';
                  letterCompare = 'I';
                  letterDescription = 'Information about letter I.';
-                 imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                 videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A         
+                 imageSource = 'path_to_your_image_for_A.jpg'; 
+                 videoSource = 'path_to_your_video_for_A.mp4';          
                  break;
             case 'J':
                  letterHeading = 'Letter J';
                  letterCompare = 'J';
                  letterDescription = 'Information about letter J.';
-                 imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                 videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A         
+                 imageSource = 'path_to_your_image_for_A.jpg'; 
+                 videoSource = 'path_to_your_video_for_A.mp4';          
                  break;
             case 'K':
                 letterHeading = 'Letter K';
                 letterCompare = 'K';
                 letterDescription = 'Information about letter K.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'L':
                 letterHeading = 'Letter L';
                 letterCompare = 'L';
                 letterDescription = 'Information about letter L.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'M':
                 letterHeading = 'Letter M';
                 letterCompare = 'M';
                 letterDescription = 'Information about letter M.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'N':
                 letterHeading = 'Letter N';
                 letterCompare = 'N';
                 letterDescription = 'Information about letter N.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'O':
                 letterHeading = 'Letter O';
                 letterCompare = 'O';
                 letterDescription = 'Information about letter O.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'P':
                 letterHeading = 'Letter P';
                 letterCompare = 'P';
                 letterDescription = 'Information about letter P.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'Q':
                 letterHeading = 'Letter Q';
                 letterCompare = 'Q';
                 letterDescription = 'Information about letter Q.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'R':
                 letterHeading = 'Letter R';
                 letterCompare = 'R';
                 letterDescription = 'Information about letter R.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
              case 'S':
                 letterHeading = 'Letter S';
                 letterCompare = 'S';
                 letterDescription = 'Information about letter S.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'T':
                 letterHeading = 'Letter T';
                 letterCompare = 'T';
                 letterDescription = 'Information about letter T.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'U':
                 letterHeading = 'Letter U';
                 letterCompare = 'U';
                 letterDescription = 'Information about letter U.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'V':
                 letterHeading = 'Letter V';
                 letterCompare = 'V';
                 letterDescription = 'Information about letter V.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'W':
                 letterHeading = 'Letter W';
                 letterCompare = 'W';
                 letterDescription = 'Information about letter W.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'X':
                 letterHeading = 'Letter X';
                 letterCompare = 'X';
                 letterDescription = 'Information about letter X.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'Y':
                 letterHeading = 'Letter Y';
                 letterCompare = 'Y';
                 letterDescription = 'Information about letter Y.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
             case 'Z':
                 letterHeading = 'Letter Z';
                 letterCompare = 'Z';
                 letterDescription = 'Information about letter Z.';
-                imageSource = 'path_to_your_image_for_A.jpg'; // Add image source for letter A
-                videoSource = 'path_to_your_video_for_A.mp4'; // Add video source for letter A        
+                imageSource = 'path_to_your_image_for_A.jpg'; 
+                videoSource = 'path_to_your_video_for_A.mp4';         
                 break;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-            // Add more cases for other letters as needed
+            // Default incase one or all do/does not work
             default:
                 letterHeading = 'Letter';
                 letterDescription = 'Information about the selected letter.';

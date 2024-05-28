@@ -1,9 +1,107 @@
-<mxfile host="app.diagrams.net" modified="2024-05-28T04:08:02.119Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.4.9" etag="UCNA27LR0UoU1HOLwS66" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-28T05:16:14.143Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="Q9JatNIcYJgXE6gTSme4" version="24.4.9" type="github">
   <diagram name="Page-1" id="J06UfZYA9aIfyY3HL5-7">
-    <mxGraphModel>
+    <mxGraphModel dx="724" dy="416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9KLyRiNKxqEApdfL-64g-6" value="Book" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="376" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-7" value="+ISBN (PK)&lt;br&gt;+Title&lt;br&gt;+Genre&lt;div&gt;+Author&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-6">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-8" value="Members" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="170" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-9" value="&lt;div&gt;+Member ID&lt;/div&gt;+Member Name&lt;br&gt;+Member Address&lt;br&gt;+Member Phone Number" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-8">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-10" value="Loans" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="181" width="130" height="139" as="geometry">
+            <mxRectangle x="100" y="181" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-24" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=-0.006;exitY=0.111;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.036;entryY=0.445;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="9KLyRiNKxqEApdfL-64g-10">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="109.99999999999997" y="246.15999999999997" as="sourcePoint" />
+            <mxPoint x="-3.72000000000007" y="78.995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-54.98" y="120.38999999999999" />
+              <mxPoint x="80" y="209" />
+              <mxPoint x="-29.040000000000006" y="158.39" />
+              <mxPoint x="-9.040000000000006" y="188.39" />
+              <mxPoint x="10.959999999999994" y="208.39" />
+              <mxPoint x="20.959999999999994" y="218.39" />
+              <mxPoint x="-10.040000000000006" y="260.39" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-11" value="+Loan Date (CK)&lt;br&gt;+Return Date&lt;div&gt;+Member ID (FK)&lt;span style=&quot;background-color: initial;&quot;&gt;(CK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ISBN (FK)&lt;span style=&quot;background-color: initial;&quot;&gt;(CK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+Employee ID (FK)&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-10">
+          <mxGeometry y="50" width="130" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-12" value="Librarians" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="480" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-13" value="+Employee ID (PK)&lt;br&gt;+Employee&amp;nbsp;Name&lt;br&gt;+Employee&amp;nbsp;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-12">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-23" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;exitX=1.004;exitY=0.439;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="9KLyRiNKxqEApdfL-64g-11" target="9KLyRiNKxqEApdfL-64g-9">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="230.00000000000006" y="269.56899999999996" as="sourcePoint" />
+            <mxPoint x="325.06" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="215.06" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-27" value="Member" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="730" width="160" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-28" value="&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+Member_id: string&lt;/div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Member_Name: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Member_Address: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Member_PhoneNo: string&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-27">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-27">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-30" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-27">
+          <mxGeometry y="98" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-31" value="Loans" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="730" width="160" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-32" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Loan_date: Date/Time&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Return_date: Date/Time&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+Member_id: string&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+ISBN: string&lt;/div&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+Employee_id: string&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-31">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-31">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-34" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-31">
+          <mxGeometry y="118" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-35" value="Book" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="920" width="160" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-35">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-36" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ISBN: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Title: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Genre: string&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;+Author: string&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-35">
+          <mxGeometry y="34" width="160" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-38" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-35">
+          <mxGeometry y="100" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-39" value="Librarian" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="920" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-40" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Employee ID: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Employee&amp;nbsp;Name: string&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+Employee:string&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-39">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-39">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9KLyRiNKxqEApdfL-64g-42" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9KLyRiNKxqEApdfL-64g-39">
+          <mxGeometry y="88" width="160" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
